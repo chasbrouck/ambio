@@ -53,6 +53,10 @@ p {
 	font-family: "Mont-Bold", sans-serif;
 	display: inline-flex;
 }
+#nav li a.active {
+	color: #333;
+	border-bottom: 4px solid #333;
+}
 
 
 /*main*/
@@ -81,10 +85,6 @@ footer {
 		margin-top: 30px;
 		color: #666666;
 	}
-	#nav li a.active {
-		color: #333;
-		border-bottom: 4px solid #333;
-	}
 	#nav li a:hover {
 		border-bottom: 4px solid #333;
 		color: #333;
@@ -108,6 +108,14 @@ footer {
 	#logo {
 		font-size: 9vw;
 	}
+	#nav li {
+	color: #666666;
+	font-size: 4vw;
+	padding-top: 25px;
+	margin-left: 15px;
+
+	}
+
 	h2 {
 		font-size: 6vw;
 	}
