@@ -85,13 +85,16 @@ footer {
 
 @media only screen and (min-width: 768px) {
 	.blogPost {
-		border: 4px solid #333333;
 		padding-left: 40px;
 		padding-right: 40px;
 		padding-top: 3%;
 		padding-bottom: 3%;
 		margin-top: 20px;
 		margin-bottom: 20px;
+	}
+	.blogContent{
+		margin-left: 20%;
+		margin-right: 20%;
 	}
 	#nav li a{
 		margin-left: 20px;
@@ -101,6 +104,9 @@ footer {
 	#nav li a:hover {
 		border-bottom: 4px solid #333;
 		color: #333;
+	}
+	.blogPost img {
+		padding-top: 30px;
 	}
 }
 
@@ -112,7 +118,6 @@ footer {
 		margin-left: 3%;
 	}
 	.blogPost {
-		border: 4px solid #333333;
 		padding-left: 40px;
 		padding-right: 40px;
 		padding-top: 3%;
