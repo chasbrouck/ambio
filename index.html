@@ -10,91 +10,91 @@
 	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css">
 	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
 	<link rel="stylesheet" href="css/app.css">
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
 <body class="mobileMargin">
 	<header class="pure-g">
-		<div class="pure-u-md-8-24 pure-u-0-1"></div>
-		<div class="pure-u-md-8-24 pure-u-1-1">
-			<img src="images/logo-white.png" class="responsive">
+		<div class="pure-u-md-2-24 pure-u-1-1"></div>
+		<div class="pure-u-md-3-24 pure-u-1-3">
+			<img src="images/logo.png" class="responsive" id="logo">
 		</div>
-		<!--<div class="pure-u-md-9-24 pure-u-2-3">
+		<div class="pure-u-md-17-24 pure-u-2-3">
 			<ul id="nav">
-				<li><a href="#" class="active">blog</a></li>
+				<li><a href="blog/" class="active">blog</a></li>
 				<li><a href="team/">team</a></li>
+				<li><a href="contact/">contact</a></li>
 			</ul>
-		</div>-->
+		</div>
 	</header>
 
 	<section class="pure-g">
-		<div class="pure-u-md-6-24 pure-u-0-1"></div>
-		<div class="pure-u-md-13-24 pure-u-1-1">
-			<article class="blogPost">
-				<h2 class="blogContent">Mood Ideation</h2>
-				<h3 class="blogContent">3.016.2017</h3>
-				<p class="blogContent">This week, our team solidified mood words and their sub-words. We then created associated graphics to display for each mood</p>
+		<div class="pure-u-md-2-24 pure-u-0-1"></div>
+		<div class="pure-u-md-10-24 pure-u-1-1">
+			<h1 class="topMarg">Miss someone close to you?</h1>
+			<h3>Ambio is a modern take on the classic mood ring. Using the biometric tracking capabilities of wearable technology, Ambio interprets your emotions and shares them with the people closest to you.</h3>
+			<h3 class="topMarg"><img src="images/starEmo.png" class="iconLeft">Join us and stay connected<img src="images/starEmo.png" class="iconRight"></h3>
+			<!-- Begin MailChimp Signup Form -->
+			<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+			<style type="text/css">
+				#mc_embed_signup {
+					clear: left;
+					font: 14px Helvetica, Arial, sans-serif;
+					width: 100%;
+				}
+				
+				.button {
+					background-color: #9012FE;
+				}
+				/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 
-				<p class="blogContent">We made sure to carefully take accessibility into account when choosing our colors. To accommodate users who experience colorblindness, we made sure each mood’s color distinctly contrasted from the next, to ensure that a user couldn’t misinterpret one mood as another.</p>
+			</style>
+			<div id="mc_embed_signup">
+				<form action="//tech.us15.list-manage.com/subscribe/post?u=18affb638f6e67eddfd03913d&amp;id=2197a906f6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<div id="mc_embed_signup_scroll">
 
-				<p class="blogContent">Our Industrial Designer, Vincent, finalized our product design direction.</p>
+						<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email" required>
+						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_18affb638f6e67eddfd03913d_2197a906f6" tabindex="-1" value=""></div>
+						<div class="clear"><input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+					</div>
+				</form>
+			</div>
 
-				<p class="blogContent">Finally, we finalized a branding direction by deciding on a logo, brand colors, and gradients.</p>
-				<img src="images/color.png">
-				<img src="images/moodNoise.jpg">
-			</article>
-			<article class="blogPost">
-				<h2 class="blogContent">Design Update</h2>
-				<h3 class="blogContent">3.02.2017</h3>
-				<p class="blogContent">These past two weeks, our design team solidified a design direction. First, we reviewed our collective moodboards and brainstormed keywords to adhere to throughout the continuation of our project: ambient, casual, seamless, trustworthy. We then conceptualized the first version of ambio’s main screen, which displays a partner user’s emotions. We’re establishing an organic and fluid look. The screen depicts the user’s emotions growing and flucuating over course of the day to emulate natural human emotions. In our interface, we’re emphasizing versatility and modifiability, as users are able to filter the intensity of their emotional display based on which partner user is viewing it.</p>
-
-				<p class="blogContent">Additionally, our Industrial Designer, Vincent, created prototypes of our unique ambio wearable device. After exploring iterations of more traditional wearable design, we moved toward an innovative and versatile product. Our focus is on the uniqueness of the ambio wearable, and that its sole purpose is to connect you with loved ones.</p>
-				<img src="images/team1.jpg">
-				<img src="images/vince.JPG">
-			</article>
-			<article class="blogPost">
-				<h2 class="blogContent">Developer Update #1: An Exploration of Verbal</h2>
-				<h3 class="blogContent">2.20.2017</h3>
-				<p class="blogContent">This week our dev team spent time researching the potential of vocal analysis. Vocal can be the sole indicator of someone's mood. However, the extraction and analyzation of vocal patterns is a complex process. Instead of reinventing the wheel, our development team is looking to leverage existing technologies to obtain consistent biometric readings. This will allow our team to focus on Ambio’s core “connectivity” features, while maintaining a trustworthy infrastructure of data.</p>
-
-				<p class="blogContent">After testing various products, our team has determined that the <a href="http://www.beyondverbal.com/">Beyond Verbal</a> analysis software aligns best with Ambio’s scope and goals. Beyond Verbal is an API based software that analyzes emotions based on a user's vocal intonations. The API intakes an audio file, analyzes it, and returns a cohesive mood package based off of three indicators.</p>
-
-				<ul class="blogContent">
-					<li><p>Temper (Emotion)<br>
-						“Temper reflects a speaker’s temperament or emotional state ranging from gloomy or depressive at the low-end, embracive and friendly in the mid-range, and confrontational or aggressive at the high-end of the scale.”</p></li>
-
-					<li><p>Valence (Positivity)<br>
-						“Continuous Scale ranging from 0 to 100, representing a valence shift from negative attitude at the lower part of the scale to a positive attitude at the higher part of the same scale.”</p></li>
-
-					<li><p>Arousal <br>
-						“Arousal is an output that measures a speaker’s degree of energy ranging from tranquil, bored or sleepy to excited and highly energetic. Arousal can also correspond to similar concepts such as involvement and stimulation.”</p>
-				</ul>
-		
-
-				<p class="blogContent">Using the data received from Beyond Verbal, Ambio will construct a user profile that stores the mood of the wearer over time. This information will then be presented to tied users. </p>
-
-			</article>
-			<article class="blogPost">
-				<h2 class="blogContent">Team .init</h2>
-				<h3 class="blogContent">2.14.2017</h3>
-				<p class="blogContent">The Team<p>
-
-				<p class="blogContent">We are ambio. We’re comprised of three New Media Developers, four New Media Designers, and one Industrial Designer. Our diverse disciplines and combined talents allow us to be a more creative and dynamic team.</p>
-
-				<p class="blogContent">Connectin’ Homies</p>
-
-				<p class="blogContent">We’re connecting people in a natural way. Our dissatisfaction with the contrived nature of today’s digital communication drove us to innovate an ambient, instinctive method of sharing our emotions with the people we care about. With ambio, we begin by collecting a user’s biometric data through wearable technology. We then use that data to discern a user’s mood, and finally share that mood with their partner user/users. Ultimately, we’re going to make users feel as if they are physically with the ones they love.</p>
-				<img src="images/colton.JPG">
-				<img src="images/all.jpg">
-			</article>
+			<!--End mc_embed_signup-->
+		</div>
+		<div class="pure-u-md-1-24"></div>
+		<div class="pure-u-md-9-24 pure-u-1-1">
+			<div class="imageSlider">
+				<img class="mySlides" src="images/watch.png" class="responsive">
+				<img class="mySlides" src="images/phone.png" class="responsive">
+				<img class="mySlides" src="images/wearable.png" class="responsive">
+			</div>
 		</div>
 	</section>
 
-	<footer class="pure-g">
-		<div class="pure-u-md-3-24 pure-u-0-1"></div>
-		<div class="pure-u-md-18-24 pure-u-1-1 ">
-			<h2 class="contact">contact us: <a href="mailto:cgh2166@rit.edu">cgh2166@rit.edu</a></h2>
-		</div>
-	</footer>
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			myIndex++;
+			if (myIndex > x.length) {
+				myIndex = 1
+			}
+			x[myIndex - 1].style.display = "block";
+			setTimeout(carousel, 4000); // Change image every 2 seconds
+		}
+
+	</script>
 
 </body>
 

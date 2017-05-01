@@ -1,13 +1,13 @@
 /* global bg/u color */
 
 @font-face {
-	font-family: Mont;
-	src: url(../fonts/Montserrat-Regular.ttf);
+	font-family: SF-Reg;
+	src: url(../fonts/SFText-Regular.otf);
 }
 
 @font-face {
-	font-family: Mont-Bold;
-	src: url(../fonts/Montserrat-Bold.ttf);
+	font-family: SF-Bold;
+	src: url(../fonts/SFText-Semibold.otf);
 }
 article{
 	background-color: #ffffff;
@@ -25,32 +25,42 @@ article{
 h1,
 h2,
 a {
-	font-family: "Mont-Bold", sans-serif;
-	color: #333333;
+	font-family: "SF-Reg", sans-serif;
+	color: white;
 	text-decoration: none;
 }
 h3{
-	font-family: "Mont", sans-serif;
-	color: #333333;
+	font-family: "SF-Reg", sans-serif;
+	color: #A9A9A9;
 	text-decoration: none;
+	font-size: 18px;
+	line-height: 30px;
 }
 p {
 	color: #333333;
 }
 
+#blog h1 {
+	color: black;
+}
+
 .blogPost img {
 	width: 49%;
 }
+.blogLogo{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
 body{
-	background-color: #9012FE;
+	background-color: black;
 }
 
 /* header */
 
 #logo {
 	font-size: 50px;
-	font-family: "Mont-Bold", sans-serif;
-	margin-top: 25px;
+	font-family: "SF-Reg", sans-serif;
+	margin-top: 30px;
 	color:#ffffff;
 }
 
@@ -60,12 +70,14 @@ body{
 
 #nav li {
 	font-size: 18px;
-	font-family: "Mont-Bold", sans-serif;
 	display: inline-flex;
-	color: #000;
+	color: white;
+}
+#nav li a{
+	font-family: "SF-Bold", sans-serif;
 }
 #nav li a.active {
-	color: #000;
+	color: white;
 	border-bottom: 4px solid #000;
 }
 .responsive{
@@ -73,10 +85,38 @@ body{
 }
 
 /*main*/
+#mc-embedded-subscribe-form{
+	text-align: left !important;
+}
+.button {
+	 background-color: #9012FE !important;
+}
+.imageSlider img{
+	display:block;
+    margin:auto;
+	margin-top: 80px;
+}
+.iconLeft {
+	width: 20px;
+	position: relative;
+	top: 4px;
+	margin-right: 10px;
+}
+.iconRight {
+	width: 20px;
+	position: relative;
+	top: 4px;
+	margin-left: 10px;
+}
+
 
 /*footer*/
 
-footer {
+#blog footer {
+	margin-bottom: 30px;
+	text-align: center;
+}
+#blog footer {
 	margin-bottom: 30px;
 }
 
@@ -96,17 +136,23 @@ footer {
 		margin-left: 20%;
 		margin-right: 20%;
 	}
+	.topMarg{
+		margin-top: 80px;
+	}
 	#nav li a{
 		margin-left: 20px;
 		margin-top: 30px;
-		color: #666666;
+		color: white;
 	}
 	#nav li a:hover {
-		border-bottom: 4px solid #333;
-		color: #333;
+		border-bottom: 4px solid white;
+		color: white;
 	}
 	.blogPost img {
 		padding-top: 30px;
+	}
+	.smallMargin{
+		margin-top: 20px;
 	}
 }
 
