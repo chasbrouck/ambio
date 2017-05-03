@@ -83,6 +83,9 @@ body{
 .responsive{
 	width: 100%;
 }
+.responsive50{
+	width: 40%;
+}
 
 /*main*/
 #mc-embedded-subscribe-form{
